@@ -1,60 +1,56 @@
 ![banner](https://i.postimg.cc/zfkFXrK2/Azizdev-1-2.png "banner")
 
 <div align="center">
-<h1>Интеграция системы Eskiz отправить sms в Ruby</h1>
+<h1>Ruby-da Eskiz tizimi SMS-xabarlarini integratsiya qilish</h1>
 </div>
 
-Этот репозиторий содержит готовые коды того, как можно отправлять СМС операторам мобильной связи. 
+Ushbu repozitoriyda mobil aloqa operatorlariga SMS-xabarlarini yuborishning qanday amallar ko'dini o'rgatuvchi tayyor kodlar mavjud.
 
-Эти коды содержат интеграции следующих сервисов:
-- Eskiz - Успей забронировать свое место в Интернете. [Официальный сайт](https://eskiz.uz/)
+Bu kodlar quyidagi xizmat integratsiyalarini o'z ichiga oladi:
 
-## Установка
-Клонируйте проект с github
+- Eskiz - Internetdagi o'zingiz uchun joy bron qiling. [Rasmiy sayti](https://eskiz.uz/)
+
+## O'rnatish
+Github'dan loyihani klonlashtiring:
 ```console
 git clone https://github.com/azizdevfull/eskiz-uz-ruby.git
 ```
 
-Установите все пакеты, необходимые для работы sms-сервисов
+SMS-xizmatlarining ishlashi uchun kerakli barcha paketlarni o'rnatib olasiz:
 ```bash
 bundle install
 ```
 
-## Интеграция [Eskiz.uz](https://eskiz.uz/)
+## [Eskiz.uz](https://eskiz.uz/) integratsiyasi
 
-Чтобы начать интеграцию через службу Eskiz, вам понадобятся `ESKIZ_EMAIL` и `ESKIZ_PASSWORD`. Вы можете получить эту информацию, после заключения [контракта с компанией](https://eskiz.uz/reseller)
+Eskiz xizmati orqali integratsiyani boshlash uchun sizga `ESKIZ_EMAIL` va `ESKIZ_PASSWORD` kerak bo'ladi. Bu ma'lumotni [ kompaniya bilan shartnoma yopishdan keyin](https://eskiz.uz/reseller) olishingiz mumkin.
 
-После того, как вы получили необходимые ключи, вы должны записать их, создав файл `.env` или просто скопируйте готовый шаблон `env.example`
+Kerakli kalitlarni olishdan keyin, ularni yozib olish uchun `.env` faylini yaratishingiz kerak yoki tayyor shablonni `env.example` nusxalab olasiz:
 ```console
 cp env.example .env
 ```
 
-Заполните `ESKIZ_EMAIL` и `ESKIZ_PASSWORD`
+`ESKIZ_EMAIL` va `ESKIZ_PASSWORD` maydonlarini to'ldiring
 
-Перейдите к файлу `eskiz.rb` и введите свой номер телефона в переменную `phone`
+`eskiz.rb` fayliga o'ting va `phone_number` o'zgaruvchisida telefon raqamingizni kiritng
 
-### Приступаем к отправке первого СМС
+
+### Birinchi SMS-xabarni yuborishga tayyormisiz?
 ```console
 ruby eskiz.rb
 ```
 
-Для получения дополнительной информации перейдите по [этой ссылке](https://documenter.getpostman.com/view/663428/RzfmES4z?version=latest)
+Qo'shimcha ma'lumot uchun [bu havolaga](https://documenter.getpostman.com/view/663428/RzfmES4z?version=latest) o'ting
 
-### Полезные ссылки
+### Foydali havolalar
 
-- Официальный сайт - https://eskiz.uz
-- Персоналный кабинет - https://my.eskiz.uz/dashboard
-- Проверит баланс - https://my.eskiz.uz/sms
-- Руководство разработчика - https://documenter.getpostman.com/view/663428/RzfmES4z?version=latest
+- Rasmiy sayt - https://eskiz.uz
+- Shaxsiy kabinet - https://my.eskiz.uz/dashboard
+- Balansni tekshirish - https://my.eskiz.uz/sms
+- Dasturchi qo'llanmasy - https://documenter.getpostman.com/view/663428/RzfmES4z?version=latest
 
 
-## Автор
+## Muallif
 [Isroilov Azizbek](https://t.me/isroilov_azizbek)
 
-## Социальные сети
-<div align="center">
-  Подпишитесь на нас, чтобы получать больше новостей о веб-программировании: <br>
-  <a href="https://www.instagram.com/_az1z_0ken._">Instagram</a>
-  <span> | </span>
-  <a href="https://t.me/isroilov_azizbek">Telegram</a>
-</div>
+
