@@ -1,1 +1,13 @@
-# eskiz-uz-ruby
+## Example
+
+
+
+## installation
+
+```
+gem install
+```
+## Use
+```
+ruby eskiz.rb
+```
